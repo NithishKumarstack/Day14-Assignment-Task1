@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Form</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="full-page">
+    <div><h1 id="title">FORM</h1></div>
+    <p id="description">Give Your Personal Data</p>
+        <div class="content-page">
+     <form id="form">
+        <fieldset>
+        <legend>Personal:</legend>
+        <div class="form-group">
+            <label for="fname">First Name:<span class="mandatory">*</span></label>
+        <form><input type="text" id="first-name"  placeholder="Enter First Name" required></form>
+        </div><br>
+        <div class="form-group">
+            <label for="lname">Last Name:<span class="mandatory">*</span></label>
+            <input type="text" id="last-name"  placeholder="Enter Last Name" required>
+        </div><br>
+        <div class="form-group">
+            <label for="add">Address:<span class="mandatory">*</span></label>
+            <textarea id="address" rows="3" cols="30" placeholder="AddRess"></textarea>
+        </div><br>
+        <div class="form-group">
+            <label for="pincode">PinCode:<span class="mandatory">*</span></label>
+            <form><input id="pincode" type="text" name="pin"  placeholder="PinCode" required></form>
+        </div><br>
+        <div class="form-group">
+            <form><label>Gender:<span class="mandatory">*</span></label>
+                <select name="gender" type="option" id="gender" required>
+                    <option value="">-Select Gender-</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </form>
+        </div>
+        <div>
+        <h4>Choice Of Food:<span class="mandatory">*</span></h4>
+            <input type="checkbox" class="food-checkbox" id="food1" name="food1" value="Idly">
+            <label for="food1"> Idly </label><br>
+            <input type="checkbox" class="food-checkbox" id="food2" name="food2" value="Dosa">
+            <label for="food2"> Dosa </label><br>
+            <input type="checkbox" class="food-checkbox" id="food3" name="food3" value="Fired Rice">
+            <label for="food3"> Fired Rice </label><br>
+            <input type="checkbox" class="food-checkbox" id="food4" name="food4" value="Biriyani">
+            <label for="food4"> Biriyani </label><br>
+            <input type="checkbox" class="food-checkbox" id="food5" name="food5" value="Chicken Rice">
+            <label for="food5"> Chicken Rice </label><br>
+        </div><br>
+        <div>
+            <label>State:<span class="mandatory">*</span></label>
+            <select name="state" id="state" required>
+                <option value="">-Select State-</option>
+                <option value="TN">TamilNadu</option>
+                <option value="KL">Kerala</option>
+                <option value="kA">Karanataka</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="TG">Telangana</option>
+            </select>
+        </div><br>
+        <div>
+            <label>Country:<span class="mandatory">*</span></label>
+             <select name="country" id="country" required>
+                <option value="">-Select County-</option>
+                <option value="IN">India</option>
+                <option value="SP">Singapore</option>
+                <option value="SL">Sri Lanka</option>
+                <option value="NP">Nepal</option>
+                <option value="MY">Malaysia</option>
+            </select>
+        </div><br>
+        <div>
+            <button class="btn & btn-primary" id="submit">Submit</button>
+            <button id="cancel">Cancel</button>
+        </div>
+        </fieldset>
+     </form>
+        </div>
+    </div class="table">
+    <table class="table" id="data-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>PinCode</th>
+                <th>Gender</th>
+                <th>Choice of Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Existing or initial data may go here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>    
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Mobile Styles (Small Screens) */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Medium Screen Styles */
+@media screen and (min-width: 768px) {
+    input[type="text"],
+    select {
+        width: 70%;
+    }
+}
+
+/* Large Screen Styles */
+@media screen and (min-width: 1024px) {
+    input[type="text"],
+    select {
+        width: 50%;
+    }
+}
+
+/* Form Style */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.full-page {
+    border: 3px solid black;
+    border-radius: 2%;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mandatory {
+   color: red;
+}
+
+.content-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+#submit {
+    margin-right: 3%;
+}
+
+/* Table Style*/
+/* Add table styling in your CSS file */
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#data-table th {
+    background-color: #f2f2f2;
+}
+
+#data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
